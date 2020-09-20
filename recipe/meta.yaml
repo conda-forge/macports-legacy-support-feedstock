@@ -1,5 +1,5 @@
 {% set name = "macports-legacy-support" %}
-{% set version = "0.12" %}
+{% set version = "0.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/macports/macports-legacy-support/archive/v{{ version }}.tar.gz
-  sha256: bb68d5d553eaa41768ee818c41e2cd5f5d35b51c465de9730aff9f536b931240
+  sha256: 2ed1c5d9dc066db1b5c9d1724413fd941abc4bb82cf62cef49379798b4cbc41d
 
 build:
   number: 0
-  skip: True  # [not osx]
+  skip: true  # [not osx]
   script: make PREFIX=$PREFIX CFLAGS="$CPPFLAGS $CFLAGS" LDFLAGS="$LDFLAGS" install
   run_exports:
     # Let's trust them.
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Installs wrapper headers to add missing functionality to legacy OSX versions.'
+  summary: Installs wrapper headers to add missing functionality to legacy OSX versions.
 
 extra:
   recipe-maintainers:
