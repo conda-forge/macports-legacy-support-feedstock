@@ -62,6 +62,7 @@ Installing `macports-legacy-support` from the `conda-forge` channel can be achie
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `macports-legacy-support` can be installed with:
