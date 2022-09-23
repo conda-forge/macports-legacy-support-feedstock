@@ -1,5 +1,5 @@
 {% set name = "macports-legacy-support" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/macports/macports-legacy-support/archive/v{{ version }}.tar.gz
-  sha256: f38cafc931328453ce1d2ff5fc0bc2b39207b17a5ed29623d4bee46523a961b6
+  sha256: 36b6839b814b390c132819df6be36b6baf0e68f8001f0492886182ea28d5ffbc
 
 build:
   number: 0
